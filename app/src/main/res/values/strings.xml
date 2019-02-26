@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PerpustakaanKu</string>
+
+    <string-array name="spinner_penerbit">
+        <item>Erlangga</item>
+        <item>Gramedia</item>
+        <item>Grasindo</item>
+        <item>Lain-lain</item>
+    </string-array>
+</resources>
