@@ -36,6 +36,10 @@ public class FormActivity extends AppCompatActivity implements RatingBar.OnRatin
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form);
 
+        //ActionBarBack
+        if (getSupportActionBar() != null);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         tv_jumlah = findViewById(R.id.tv_jumlah);
         edt_judulBuku = findViewById(R.id.edt_judul_buku);
         edt_isbnBuku = findViewById(R.id.edt_isbn_buku);
@@ -217,5 +221,12 @@ public class FormActivity extends AppCompatActivity implements RatingBar.OnRatin
             tambahBuku();
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    //ActionBarBackFinish
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return super.onSupportNavigateUp();
     }
 }

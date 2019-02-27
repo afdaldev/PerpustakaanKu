@@ -117,6 +117,7 @@
         <EditText
             android:id="@+id/edt_kode_warna"
             android:hint="Kode Warna (Hex)"
+            android:digits="#0123456789ABCDEFabcdef"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </android.support.design.widget.TextInputLayout>
