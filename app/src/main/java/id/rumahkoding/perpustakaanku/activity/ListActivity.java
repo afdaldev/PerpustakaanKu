@@ -1,4 +1,4 @@
-package id.rumahkoding.perpustakaanku;
+package id.rumahkoding.perpustakaanku.activity;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -14,6 +14,7 @@ import android.widget.Toast;
 
 import java.util.List;
 
+import id.rumahkoding.perpustakaanku.R;
 import id.rumahkoding.perpustakaanku.adapter.RecyclerViewAdapter;
 import id.rumahkoding.perpustakaanku.database.DatabaseManager;
 import id.rumahkoding.perpustakaanku.model.Book;

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context=".FormActivity">
+    tools:context=".activity.FormActivity">
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
@@ -141,6 +141,7 @@
         <EditText
             android:id="@+id/edt_rangkuman"
             android:hint="Rangkuman"
+            android:inputType="textMultiLine"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </android.support.design.widget.TextInputLayout>

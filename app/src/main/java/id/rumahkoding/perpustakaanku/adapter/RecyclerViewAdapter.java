@@ -1,9 +1,11 @@
 package id.rumahkoding.perpustakaanku.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +15,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
+import id.rumahkoding.perpustakaanku.activity.DetailActivity;
 import id.rumahkoding.perpustakaanku.R;
 import id.rumahkoding.perpustakaanku.model.Book;
 
@@ -51,7 +54,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         return dataList.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder{
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+
         private TextView tvjudulBuku, tvkategori, tvpenerbit;
         private ImageView imgBook;
         private RatingBar ratingBar;
@@ -63,6 +67,18 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             tvpenerbit = itemView.findViewById(R.id.text_view_penerbit);
             imgBook = itemView.findViewById(R.id.img_book);
             ratingBar = itemView.findViewById(R.id.rating_bar_list_book);
+
+            itemView.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View v) {
+            int position = getAdapterPosition();
+            Book book = dataList.get(position);
+
+            Intent intent = new Intent(context, DetailActivity.class);
+            intent.putExtra("book", book);
+            context.startActivity(intent);
         }
     }
 }

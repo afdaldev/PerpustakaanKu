@@ -1,4 +1,4 @@
-package id.rumahkoding.perpustakaanku;
+package id.rumahkoding.perpustakaanku.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,6 +16,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.Calendar;
 
+import id.rumahkoding.perpustakaanku.R;
 import id.rumahkoding.perpustakaanku.database.DatabaseManager;
 import id.rumahkoding.perpustakaanku.model.Book;
 
@@ -44,7 +45,7 @@ public class FormActivity extends AppCompatActivity implements RatingBar.OnRatin
         edt_judulBuku = findViewById(R.id.edt_judul_buku);
         edt_isbnBuku = findViewById(R.id.edt_isbn_buku);
         edt_kodeWarna = findViewById(R.id.edt_kode_warna);
-        edt_rangkuman = findViewById(R.id.edt_kode_warna);
+        edt_rangkuman = findViewById(R.id.edt_rangkuman);
         spinner_tahunTerbit = findViewById(R.id.spinner_tahun_terbit);
         spinner_penerbit = findViewById(R.id.spinner_penerbit);
         radioGroup_kategori = findViewById(R.id.radio_group_kategori);
@@ -109,7 +110,7 @@ public class FormActivity extends AppCompatActivity implements RatingBar.OnRatin
 
         ArrayList<String> years = new ArrayList<>();
         int thisYear = Calendar.getInstance().get(Calendar.YEAR);
-        for (int i = 1900; i <= thisYear; i++){
+        for (int i = 2000; i <= thisYear; i++){
             years.add(Integer.toString(i));
         }
 

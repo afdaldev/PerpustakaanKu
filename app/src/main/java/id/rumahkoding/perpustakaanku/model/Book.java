@@ -110,10 +110,6 @@ public class Book implements Parcelable {
         this.rangkuman = rangkuman;
     }
 
-    public static Creator<Book> getCREATOR() {
-        return CREATOR;
-    }
-
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeLong(id);
