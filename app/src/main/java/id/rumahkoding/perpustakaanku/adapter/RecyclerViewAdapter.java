@@ -67,6 +67,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             tvpenerbit = itemView.findViewById(R.id.text_view_penerbit);
             imgBook = itemView.findViewById(R.id.img_book);
             ratingBar = itemView.findViewById(R.id.rating_bar_list_book);
+            ratingBar.setEnabled(false);
 
             itemView.setOnClickListener(this);
         }

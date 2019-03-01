@@ -31,6 +31,7 @@ public class DetailActivity extends AppCompatActivity {
 
         imgDetailBuku = findViewById(R.id.img_detail_buku);
         detailRatingBar = findViewById(R.id.detail_ratingBar);
+        detailRatingBar.setEnabled(false);
         tvDetailJudulBuku = findViewById(R.id.detail_judul_buku);
         tvDetailIsbn = findViewById(R.id.detail_isbn);
         tvDetailTahunTerbit = findViewById(R.id.detail_tahun_terbit);
@@ -64,9 +65,6 @@ public class DetailActivity extends AppCompatActivity {
         tvDetailKategori.setBackground(sd);
         tvDetailJumlah.setBackground(sd);
         tvDetailRangkuman.setBackground(sd);
-
-        GradientDrawable shape = new GradientDrawable();
-        shape.setCornerRadius(8);
     }
 
     @Override
