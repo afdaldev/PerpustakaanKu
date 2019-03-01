@@ -1,148 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="10dp"
-    tools:context=".activity.FormActivity">
-
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <EditText
-            android:id="@+id/edt_judul_buku"
-            android:hint="Judul Buku"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </android.support.design.widget.TextInputLayout>
-
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <EditText
-            android:id="@+id/edt_isbn_buku"
-            android:hint="ISBN"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </android.support.design.widget.TextInputLayout>
-
-    <TextView
-        android:text="Tahun Terbit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <Spinner
-        android:id="@+id/spinner_tahun_terbit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </Spinner>
-
-    <TextView
-        android:text="Penerbit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <Spinner
-        android:id="@+id/spinner_penerbit"
-        android:entries="@array/spinner_penerbit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </Spinner>
-
-    <TextView
-        android:text="Kategori"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <RadioGroup
-        android:id="@+id/radio_group_kategori"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <RadioButton
-            android:id="@+id/radio_button_buku_agama"
-            android:text="Buku Agama"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <RadioButton
-            android:id="@+id/radio_button_buku_komputer"
-            android:text="Buku Komputer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <RadioButton
-            android:id="@+id/radio_button_novel"
-            android:text="Novel"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <RadioButton
-            android:id="@+id/radio_button_lain_lain"
-            android:text="Lain-lain"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </RadioGroup>
+    android:layout_height="wrap_content">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context=".activity.FormActivity">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edt_judul_buku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Judul Buku" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edt_isbn_buku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ISBN" />
+        </android.support.design.widget.TextInputLayout>
+
         <TextView
-            android:text="Jumlah: "
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tahun Terbit" />
+
+        <Spinner
+            android:id="@+id/spinner_tahun_terbit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </Spinner>
+
         <TextView
-            android:id="@+id/tv_jumlah"
-            android:text="0"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Penerbit" />
+
+        <Spinner
+            android:id="@+id/spinner_penerbit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinner_penerbit"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kategori" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_kategori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radio_button_buku_agama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buku Agama" />
+
+            <RadioButton
+                android:id="@+id/radio_button_buku_komputer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Buku Komputer" />
+
+            <RadioButton
+                android:id="@+id/radio_button_novel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Novel" />
+
+            <RadioButton
+                android:id="@+id/radio_button_lain_lain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lain-lain" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jumlah: " />
+
+            <TextView
+                android:id="@+id/tv_jumlah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0" />
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/seekbar_jumlah"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edt_kode_warna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="#0123456789ABCDEFabcdef"
+                android:hint="Kode Warna (Hex)" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kualitas" />
+
+        <RatingBar
+            android:id="@+id/rating_bar_kualitas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:numStars="5" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edt_rangkuman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Rangkuman"
+                android:inputType="textMultiLine" />
+        </android.support.design.widget.TextInputLayout>
     </LinearLayout>
-
-    <SeekBar
-        android:id="@+id/seekbar_jumlah"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <EditText
-            android:id="@+id/edt_kode_warna"
-            android:hint="Kode Warna (Hex)"
-            android:digits="#0123456789ABCDEFabcdef"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </android.support.design.widget.TextInputLayout>
-
-    <TextView
-        android:text="Kualitas"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <RatingBar
-        android:id="@+id/rating_bar_kualitas"
-        android:layout_gravity="center"
-        android:numStars="5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <EditText
-            android:id="@+id/edt_rangkuman"
-            android:hint="Rangkuman"
-            android:inputType="textMultiLine"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </android.support.design.widget.TextInputLayout>
-</LinearLayout>
+</ScrollView>

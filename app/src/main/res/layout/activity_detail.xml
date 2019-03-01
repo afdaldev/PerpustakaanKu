@@ -1,109 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="10dp"
-    tools:context=".activity.DetailActivity">
+    android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/img_detail_buku"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:context=".activity.DetailActivity">
 
-        android:background="@color/colorAccent" />
+        <ImageView
+            android:id="@+id/img_detail_buku"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/colorAccent" />
 
-    <RatingBar
-        android:id="@+id/detail_ratingBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:max="5" />
+        <RatingBar
+            android:id="@+id/detail_ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:max="5" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Judul Buku" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Judul Buku" />
 
-    <TextView
-        android:id="@+id/detail_judul_buku"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        tools:text="Judul Buku" />
+        <TextView
+            android:id="@+id/detail_judul_buku"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            tools:text="Judul Buku" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ISBN" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ISBN" />
 
-    <TextView
-        android:id="@+id/detail_isbn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        tools:text="ISBN" />
+        <TextView
+            android:id="@+id/detail_isbn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            tools:text="ISBN" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tahun Terbit" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tahun Terbit" />
 
-    <TextView
-        android:id="@+id/detail_tahun_terbit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        tools:text="Tahun Terbit" />
+        <TextView
+            android:id="@+id/detail_tahun_terbit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            tools:text="Tahun Terbit" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Penerbit" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Penerbit" />
 
-    <TextView
-        android:id="@+id/detail_penerbit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        tools:text="Penerbit" />
+        <TextView
+            android:id="@+id/detail_penerbit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            tools:text="Penerbit" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Kategori" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kategori" />
 
-    <TextView
-        android:id="@+id/detail_kategori"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        tools:text="Kategori" />
+        <TextView
+            android:id="@+id/detail_kategori"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            tools:text="Kategori" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Jumlah" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jumlah" />
 
-    <TextView
-        android:id="@+id/detail_jumlah"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        tools:text="Jumlah" />
+        <TextView
+            android:id="@+id/detail_jumlah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            tools:text="Jumlah" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Rangkuman" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rangkuman" />
 
-    <TextView
-        android:id="@+id/detail_rangkuman"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        tools:text="Rangkuman" />
-
-</LinearLayout>
+        <TextView
+            android:id="@+id/detail_rangkuman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            tools:text="Rangkuman" />
+    </LinearLayout>
+</ScrollView>
